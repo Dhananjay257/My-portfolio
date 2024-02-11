@@ -8,3 +8,6 @@ nav{
     float: right;   
 
 }
+header>p{
+    max-width: 50%;
+}
