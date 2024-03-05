@@ -2,15 +2,6 @@
     background-color: rgb(54, 48, 48);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-nav{
-    color:black;
-    font-size:x-large;
-    float: right;   
-
-}
-header>p{
-    max-width: 50%;
-}
 
 #my-img{
     width: 500px;
