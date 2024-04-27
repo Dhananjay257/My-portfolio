@@ -1,15 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My portfolio</title>
-    <link rel="stylesheet" href=".\style.css">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href=".\style.css" />
+  </head>
+  <body>
     <header>
-        <img id="my-img" src="images/image2.jpeg">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Dhananjay Dubey</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-0 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#projects">Projects</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <p>Hi, myself Dhananjay!</p>
-</body>
+    <section class="bg-primary text-center text-white p-5">
+      <h1 class="display-3">Welcome to my portfolio</h1>
+      <h4 class="fw-light">I showcase my projects and skills</h4>
+    </section>
+    <section class="p-5">
+      <h2 class="text-center m-2">About me</h2>
+      <div class="row justify-content-around align-items-center p-5">
+        <img class="col-12 col-md-6" src="images\image2.jpeg" alt="My image" />
+        <p class="col-12 col-md-6">
+          To work with an organization or company which offers challenging and
+          learning oppurtunities, I would really love to work hard and learn new
+          things, gain knowledge and experience, improve my abilities, develop
+          my functionality and improve the organization plans and work
+          procedures.
+        </p>
+      </div>
+    </section>
+    <section class="bg-light p-5">
+    <h2 id="projects" class="text-center">Projects</h2>
+    <div class="row justify-content-evenly mt-4">
+        <div class="card p-0 col-md-3 rounded-3 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1607706189992-eae578626c86?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="project_image">
+            <div class="p-3">
+             <h4>Project 1</h4>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo itaque culpa quibusdam cupiditate, repellat natus ratione est corrupti assumenda, esse nihil. Adipisci aspernatur qui vel, cupiditate facilis aperiam porro totam!</p>
+             <button class="btn btn-primary">Learn more</button>
+            </div>
+        </div>
+
+        <div class="card p-0 col-md-3 rounded-3 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29kaW5nfGVufDB8fDB8fHww" alt="project_image">
+            <div class="p-3">
+             <h4>Project 2</h4>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatibus velit, a provident, repudiandae maxime hic suscipit laborum quidem magni excepturi assumenda dolore. Dolorum accusantium distinctio magni ipsam illum tempora?!</p>
+             <button class="btn btn-primary">Learn more</button>
+            </div>
+        </div>
+
+        <div class="card p-0 col-md-3 rounded-3 overflow-hidden">
+            <img src="https://media.istockphoto.com/id/537331536/photo/programming-code-abstract-technology-background-of-software-deve.jpg?s=612x612&w=0&k=20&c=Ebyr-Ivb7AmQFJ8Uq6Ey6BVSeSzbzXZghN-SsH9-Rog=" alt="project_image">
+            <div class="p-3">
+             <h4>Project 3</h4>
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab veniam provident asperiores unde! Asperiores necessitatibus quo accusamus, porro dicta reprehenderit cupiditate! Doloribus ullam molestiae sit soluta quia, omnis eos architecto!</p>
+             <button class="btn btn-primary">Learn more</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="p-5">
+       <h2 class="text-center">Contact</h2>
+       <div class="row justify-content-center">
+        <form class="col-12 col-md-6 d-flex flex-column align-items-start">
+          <label class="form-label" for="name">Name:</label>
+          <input class="form-control w-100" type="text" id="name">
+          <label class="form-label" for="email">Email:</label>
+          <input class="form-control w-100" type="email" id="email">
+          <label class="form-label" for="message">Message:</label>
+          <textarea class="form-control w-100" id="message"></textarea>
+          <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+       </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center pt-3 pb-3">© 2023 My Portfolio. All rights reserved.</footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
