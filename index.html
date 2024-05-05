@@ -85,24 +85,33 @@
       <div class="col-12 col-md-6">
         <h2 class="text-center mb-4">Skills</h2>
         <div class="progress mb-3">
-          <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">Java (70%)</div>
+          <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
+            aria-valuemax="100">Java (70%)</div>
         </div>
         <div class="progress mb-3">
-          <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Spring Boot (80%)</div>
+          <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+            aria-valuemax="100">Spring Boot (80%)</div>
         </div>
         <div class="progress mb-3">
-          <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Spring MVC (80%)</div>
+          <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+            aria-valuemax="100">Spring MVC (80%)</div>
         </div>
         <div class="progress mb-3">
-          <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">HTML (90%)</div>
+          <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+            aria-valuemax="100">HTML (90%)</div>
+        </div>
+        <div class="progress mb-3">
+          <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
+            aria-valuemax="100">CSS (70%)</div>
         </div>
         <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">CSS (70%)</div>
+          <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+            aria-valuemax="100">Bootstrap(80%)</div>
         </div>
       </div>
     </div>
   </section>
-  
+
   <section class=" p-5">
     <h2 id="projects" class="text-center">Projects</h2>
     <div class="row justify-content-evenly mt-4">
@@ -112,15 +121,55 @@
           alt="project_image">
         <div class="p-3">
           <h4>E-Commerce</h4>
-          <p class="mb-5">The E-Commerce project is a Spring-based application simplifying online shopping with
+          <p class="mb-5">The E-Commerce project is a Spring-based application simplifying online shopping with 10 APIs
             efficient management
             of sellers, products, and payments. Leveraging Spring Boot and Hibernate ORM, it ensures seamless data
             handling with MySQL integration.!</p>
-          <button class="btn btn-primary ">Learn more</button>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary mt-5 mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Learn more
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">E-Commerce</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>This is Spring-based shopping application with 10 APIs that manage sellers,
+                      products, customers, carts and cards, which simplifies the shopping
+                      experience.</li>
+                    <li>Utilized Hibernate ORM for efficient data management and integrated
+                      with MySQL database for data persistence and DTOS to ensure privacy.</li>
+                    <li>It enables user to add their card details,add items to cart and eventually
+                      checkout.</li>
+                    <li>It enables customer to register themselves and place an order and to
+                      fetch product list by specifying category or price along with the category.</li>
+                    <li>The application has a the functionality of sending real time emails that
+                      enables users to get order confirmation and shipping updates.</li>
+                    <li>Integrated Swagger for documenting APIs and providing an interactive
+                      user experience.</li>
+                    <li>Tech Stack used: Postman, Intellij, SpringBoot, MySQL, JPA/Hibernate</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary"
+                    onclick="window.open('https://github.com/Dhananjay257/E-Commerce.git','_blank')">Github</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="card p-0 col-md-3 rounded-3 overflow-hidden">
+      <div class="card p-0 col-md-3 rounded-3 overflow-hidden mt-2">
         <img
           src="https://media.istockphoto.com/id/1349104991/photo/e-learning-online-education-concept.jpg?s=2048x2048&w=is&k=20&c=aHprwww82c4_NMRYQ3om3SRSCq5atC-opaQSIbLaYRw="
           alt="project_image">
@@ -130,7 +179,43 @@
             accounts and
             author records efficiently. Utilizing Spring Boot and Hibernate ORM, it reflects my expertise in Java,
             Spring Boot, and MySQL, and dedication to efficient solutions.</p>
-          <button class="btn btn-primary">Learn more</button>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary mt-5" data-bs-toggle="modal" data-bs-target="#lmsModal">
+            Learn more
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="lmsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Library Management System</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li> It is dynamic Spring application with 7 APIs simplifies book transactions
+                      for students and makes library accounts, books, and authors easy to
+                      manage.</li>
+                    <li> Utilized Hibernate ORM for efficient data management and integrated
+                      with MySQL database for data persistence and DTOS to ensure privacy.</li>
+                    <li> Features include automatic card issuance, streamlined book issuing returning
+                      and transaction recording.</li>
+                    <li> The application has a the functionality of sending real time emails when
+                      the student issues the book.</li>
+                    <li> Integrated Swagger for documenting APIs and providing an interactive
+                      user experience.</li>
+                    <li> Tech Stack used: Postman, Intellij, SpringBoot, MySQL, JPA/Hibernate</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary"
+                    onclick="window.open('https://github.com/Dhananjay257/Library_Management_System.git','_blank')">Github</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -140,11 +225,12 @@
           alt="project_image">
         <div class="p-3">
           <h4>Blinkit Clone</h4>
-          <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab veniam provident asperiores unde!
-            Asperiores
-            necessitatibus quo accusamus, porro dicta reprehenderit cupiditate! Doloribus ullam molestiae sit soluta
-            quia, omnis eos architecto!</p>
-          <button class="btn btn-primary">Learn more</button>
+          <p class="mb-4">Blinkit Clone: Your go-to solution for hyper-local delivery needs. Inspired by India's
+            largest delivery company, Blinkit, this project allows users to conveniently order groceries, fruits &
+            vegetables, and other daily essentials via mobile or web browser. Built with simplicity in mind using HTML,
+            CSS, and Bootstrap, Blinkit Clone offers a seamless and efficient ordering experience.</p>
+          <button class="btn btn-primary"
+            onclick="window.open('https://dhananjay257.github.io/blinkit-clone/','_blank')">Learn more</button>
         </div>
       </div>
   </section>
